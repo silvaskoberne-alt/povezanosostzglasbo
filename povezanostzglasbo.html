@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Človekova potreba po povezanosti z glasbo</title>
+
+<style>
+body{
+font-family:Arial;
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+padding:20px;
+}
+
+.card{
+background:white;
+color:black;
+padding:15px;
+margin:15px 0;
+border-radius:12px;
+}
+
+button{
+padding:8px 12px;
+margin:5px;
+border:none;
+border-radius:8px;
+background:#667eea;
+color:white;
+cursor:pointer;
+}
+
+.correct{background:green!important}
+.wrong{background:red!important}
+</style>
+</head>
+
+<body>
+
+<h1>🎵 Človekova potreba po povezanosti z glasbo</h1>
+
+<div class="card">
+<h3>1. Kje srečamo glasbo?</h3>
+<button onclick="check(this,true)">na praznovanjih</button>
+<button onclick="check(this,true)">v filmih</button>
+<button onclick="check(this,true)">pri športu</button>
+<button onclick="check(this,false)">samo v šoli</button>
+</div>
+
+<div class="card">
+<h3>2. Glasba vpliva na:</h3>
+<button onclick="check(this,true)">čustva</button>
+<button onclick="check(this,true)">razpoloženje</button>
+<button onclick="check(this,false)">barvo oči</button>
+</div>
+
+<div class="card">
+<h3>3. Glasba pomaga pri:</h3>
+<button onclick="check(this,true)">sproščanju</button>
+<button onclick="check(this,true)">komunikaciji</button>
+<button onclick="check(this,false)">spanju računalnika</button>
+</div>
+
+<div class="card">
+<h3>4. Katera dejavnost vključuje glasbo?</h3>
+<button onclick="check(this,true)">ples</button>
+<button onclick="check(this,true)">petje</button>
+<button onclick="check(this,false)">pisanje matematike</button>
+</div>
+
+<div class="card">
+<h3>5. Zakaj ljudje ustvarjajo glasbo?</h3>
+<button onclick="check(this,true)">izražanje čustev</button>
+<button onclick="check(this,true)">zabava</button>
+<button onclick="check(this,false)">da računalnik deluje</button>
+</div>
+
+<div class="card">
+<h3>6. Glasba povezuje ljudi, ker:</h3>
+<button onclick="check(this,true)">ustvarja skupne izkušnje</button>
+<button onclick="check(this,true)">ljudje lahko pojejo skupaj</button>
+<button onclick="check(this,false)">ustavi čas</button>
+</div>
+
+<script>
+function check(btn,correct){
+btn.classList.add(correct?"correct":"wrong")
+}
+</script>
+
+</body>
+</html>
+
